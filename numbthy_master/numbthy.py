@@ -107,7 +107,7 @@ def is_prime(n):
 	if (n in (2,3,5,7,11,13,17,19,23,29)): return True
 	return isprimeE(n,2) and isprimeE(n,3) and isprimeE(n,5)
 
-def factor(n):
+def factor(n, time):
 	"""factor(n) - Return a sorted list of the prime factors of n with exponents."""
 	# Rewritten to align with SAGE.  Previous semantics available as factors(n).
 	if ((abs(n) == 1) or (n == 0)): raise ValueError('Unable to factor {0}'.format(n))
