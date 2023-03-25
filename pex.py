@@ -1,4 +1,4 @@
-#   pex.py
+#   pex1.py
 #  =============================================================
 #
 #  Name: Caleb Dale
@@ -19,14 +19,17 @@
 #  If I did it smarter, I would have generated two good equations, compared them, generated one more, compared those three, and so on. I also could have checked for combinations of more than 2. I only check for two good equations combined.
 #  I performed tests for the test cases that Dixon's wasn't able to solve. I tested for the highest ratio of equations solved to equations needed to estimate an optimal factor base.
 #  Based on my tests, if I implemented the optimizations above, I would guess that the optimal factor base for test case f (24232273352113381895280635789) would be around 230.
-#  Similarly, I would also givee that the best factor base for test case g (213016805697990920376675714115937442919) would be around 380.
+#  Similarly, I would also guess that the best factor base for test case g (213016805697990920376675714115937442919) would be around 380.
 #  
-#  Slightly modified my code to more elequantly print what attempt I was on for Pollard's Rho inbetween my screenshots for test case f and g.
+#  I slightly modified my code to more elequantly print what attempt I was on for Pollard's Rho inbetween my screenshots for test case f and g.
+#
+#  I ran my code in Visual Studio Code with Windows Subsystem for Linux. The numbthy library is provided in this compressed folder. My only other required
+#  imports are time and math. I also used a csv with the first 1,000,000 primes, which is also provided.
 # =============================================================
 
 import time
 import math
-from numbthy_master.numbthy import *
+from numbthy.numbthy import *
 
 print("PEX1 - Factoring! - by Cadet Dale\nCyS431")
 
